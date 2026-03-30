@@ -1,0 +1,197 @@
+======================================================================
+1) DATASET LOADED
+D:\Decolabs\Project2\data\cleaned\cleanedEDA.csv
+
+======================================================================
+2) DATA OVERVIEW
+Shape: (1200, 14)
+Columns: ['OrderID', 'Date', 'CustomerID', 'Product', 'Quantity', 'UnitPrice', 'ShippingAddress', 'PaymentMethod', 'OrderStatus', 'TrackingNumber', 'ItemsInCart', 'CouponCode', 'ReferralSource', 'TotalPrice']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 1200 entries, 0 to 1199
+Data columns (total 14 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   OrderID          1200 non-null   str    
+ 1   Date             1200 non-null   str    
+ 2   CustomerID       1200 non-null   str    
+ 3   Product          1200 non-null   str    
+ 4   Quantity         1200 non-null   int64  
+ 5   UnitPrice        1200 non-null   float64
+ 6   ShippingAddress  1200 non-null   str    
+ 7   PaymentMethod    1200 non-null   str    
+ 8   OrderStatus      1200 non-null   str    
+ 9   TrackingNumber   1200 non-null   str    
+ 10  ItemsInCart      1200 non-null   int64  
+ 11  CouponCode       1200 non-null   str    
+ 12  ReferralSource   1200 non-null   str    
+ 13  TotalPrice       1200 non-null   float64
+dtypes: float64(2), int64(2), str(10)
+memory usage: 131.4 KB
+None
+
+Describe (all numeric):
+          Quantity    UnitPrice  ItemsInCart   TotalPrice
+count  1200.000000  1200.000000  1200.000000  1200.000000
+mean      2.945833   356.412750     5.485000  1053.968300
+std       1.407557   197.177146     2.281983   819.856558
+min       1.000000    11.390000     1.000000    11.390000
+25%       2.000000   186.062500     4.000000   410.520000
+50%       3.000000   364.210000     5.000000   823.615000
+75%       4.000000   521.570000     7.000000  1578.475000
+max       5.000000   699.930000    10.000000  3456.400000
+
+======================================================================
+3) BASIC STATISTICS (TotalPrice)
+Mean: 1053.9683
+Median: 823.615
+Count: 1200
+
+Extra describe (Quantity, UnitPrice, TotalPrice):
+          Quantity    UnitPrice   TotalPrice
+count  1200.000000  1200.000000  1200.000000
+mean      2.945833   356.412750  1053.968300
+std       1.407557   197.177146   819.856558
+min       1.000000    11.390000    11.390000
+25%       2.000000   186.062500   410.520000
+50%       3.000000   364.210000   823.615000
+75%       4.000000   521.570000  1578.475000
+max       5.000000   699.930000  3456.400000
+
+======================================================================
+4) PRODUCT ANALYSIS
+Product
+Chair      195620.11
+Printer    195612.61
+Laptop     192126.56
+Tablet     186568.95
+Monitor    175651.41
+Desk       167459.93
+Phone      151722.39
+Name: TotalPrice, dtype: float64
+
+======================================================================
+5) ORDER STATUS ANALYSIS
+OrderStatus
+Cancelled    250
+Returned     247
+Pending      237
+Shipped      235
+Delivered    231
+Name: count, dtype: int64
+
+======================================================================
+6) PAYMENT METHOD ANALYSIS
+Revenue by payment method:
+PaymentMethod
+Credit Card    263847.63
+Online         262442.94
+Cash           259786.29
+Gift Card      246323.92
+Debit Card     232361.18
+Name: TotalPrice, dtype: float64
+
+Usage count by payment method:
+PaymentMethod
+Online         258
+Cash           246
+Credit Card    234
+Debit Card     232
+Gift Card      230
+Name: count, dtype: int64
+
+======================================================================
+7) TIME TREND ANALYSIS
+Month
+2023-01    56685.75
+2023-02    40117.66
+2023-03    48609.37
+2023-04    27751.71
+2023-05    63836.84
+2023-06    49500.19
+2023-07    42820.66
+2023-08    54352.14
+2023-09    29526.67
+2023-10    52607.85
+2023-11    43079.67
+2023-12    43754.73
+2024-01    38528.08
+2024-02    36909.57
+2024-03    36030.90
+2024-04    49613.14
+2024-05    27909.11
+2024-06    68068.54
+2024-07    42963.98
+2024-08    31991.07
+2024-09    39794.98
+2024-10    37226.97
+2024-11    32413.76
+2024-12    38785.77
+2025-01    29099.40
+2025-02    35317.55
+2025-03    39200.66
+2025-04    31821.20
+2025-05    43396.64
+2025-06    53047.40
+Freq: M, Name: TotalPrice, dtype: float64
+
+======================================================================
+8) OUTLIER DETECTION (IQR on TotalPrice)
+        OrderID       Date CustomerID  ... CouponCode  ReferralSource  TotalPrice
+107   ORD200107 2023-03-27     C16775  ...   FREESHIP       Instagram     3353.75
+326   ORD200326 2024-07-01     C65986  ...     SAVE10        Facebook     3352.40
+328   ORD200328 2023-02-28     C18404  ...     SAVE10          Google     3370.20
+469   ORD200469 2023-11-26     C13877  ...   NoCoupon        Facebook     3384.90
+632   ORD200632 2023-05-02     C67260  ...   WINTER15        Facebook     3390.80
+789   ORD200789 2023-08-17     C57276  ...     SAVE10           Email     3456.40
+1065  ORD201065 2023-10-30     C47778  ...     SAVE10        Referral     3334.00
+1122  ORD201122 2023-06-07     C38840  ...   NoCoupon        Facebook     3390.95
+
+[8 rows x 14 columns]
+
+======================================================================
+9) CUSTOMER ANALYSIS
+CustomerID
+C38840    5723.23
+C57276    3456.40
+C67260    3390.80
+C13877    3384.90
+C18404    3370.20
+C16775    3353.75
+C65986    3352.40
+C47778    3334.00
+C59183    3322.55
+C25276    3313.90
+C53464    3299.25
+C13108    3293.85
+C88029    3277.75
+C27202    3267.35
+C35987    3267.30
+C36725    3253.60
+C87281    3243.25
+C84331    3223.20
+C73575    3219.45
+C88205    3215.15
+Name: TotalPrice, dtype: float64
+
+======================================================================
+10) FINAL INSIGHTS
+EDA SUMMARY
+
+1. The highest revenue comes from Chair
+2. Most orders are in status: Cancelled
+3. The most used payment method is Online (top revenue method: Credit Card)
+4. Sales trend shows decrease
+5. Outliers detected in high-value orders: 8
+6. Top customer by total revenue: C38840
+7. Lowest-revenue product: Phone
+
+BUSINESS INTERPRETATION
+- High cancellation rate (20.8%) may indicate operational issues.
+- Credit Card generates the highest revenue; this likely reflects higher-value purchases. Highest average order value is also in Credit Card.
+- Sales decline over time may be linked to seasonality or demand softening.
+
+Summary written to: D:\Decolabs\Project2\reports\eda_summary.txt
+Figures written to: D:\Decolabs\Project2\reports\figures
+PDF report written to: D:\Decolabs\Project2\reports\eda_report.pdf
