@@ -1,0 +1,14 @@
+EDA SUMMARY
+
+1. The highest revenue comes from Chair
+2. Most orders are in status: Cancelled
+3. The most used payment method is Online (top revenue method: Credit Card)
+4. Sales trend shows decrease
+5. Outliers detected in high-value orders: 8
+6. Top customer by total revenue: C38840
+7. Lowest-revenue product: Phone
+
+BUSINESS INTERPRETATION
+- High cancellation rate (20.8%) may indicate operational issues.
+- Credit Card generates the highest revenue; this likely reflects higher-value purchases. Highest average order value is also in Credit Card.
+- Sales decline over time may be linked to seasonality or demand softening.
