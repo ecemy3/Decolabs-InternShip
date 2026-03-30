@@ -1,0 +1,5 @@
+DATA CLEANING SUMMARY
+
+This project applied a structured data-cleaning pipeline to improve data quality and prepare the dataset for reliable analysis. Missing values in the CouponCode field were imputed with the label "NoCoupon" to preserve record completeness without removing observations. Duplicate transactions were addressed by removing repeated entries based on OrderID, ensuring each order is uniquely represented.
+
+Data-type consistency was then enforced by converting the Date column to a valid datetime format and standardizing Quantity, UnitPrice, and TotalPrice as numeric variables. To maintain internal consistency, TotalPrice was recalculated as Quantity multiplied by UnitPrice. Final validation confirmed that the cleaned dataset satisfies the core quality criteria required for the assignment: Duplicate OrderID = 0 and Invalid Dates = 0.
