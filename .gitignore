@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+  
+# Project 3 generated files  
+projects/Project3/orders.db  
+projects/Project3/results.txt 
