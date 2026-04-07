@@ -1,0 +1,24 @@
+PROJECT 4 - VISUAL STORYTELLING REPORT
+
+Situation:
+Sales operations are active across products, channels, and payment methods. The business generated $1,264,762 from 1,200 orders, showing strong transaction volume.
+
+Complication:
+1) Product mix pressure: Chair leads with $195,620, while Phone trails at $151,722.
+2) Demand softening: Monthly revenue from Jan 2023 to Jun 2025 changed by -6.4%, signaling weaker momentum.
+3) Fulfillment risk: Cancelled + Returned orders account for 41.4% of all orders, while Delivered is only 19.2%.
+4) Payment imbalance: Credit Card has the highest revenue ($263,848), but Online is used most (258 transactions), indicating usage and value are not aligned.
+
+Resolution (So What / What should we do next?):
+1) Protect revenue quality: Reduce cancellations and returns with stricter order verification, faster support response, and root-cause analysis by product and referral source.
+2) Recover demand: Launch targeted campaigns in low months and test product bundles around high performers (Chair/Printer/Laptop).
+3) Improve conversion to delivered orders: Track cancellation and return KPIs weekly and assign ownership to operations.
+4) Optimize payment strategy: Incentivize higher-value payment behaviors while keeping Online friction low.
+5) Monitor outliers separately: 34 orders (2.8%) exceed $3,000; track them as a special segment because they can distort monthly performance.
+
+Action Titles Used In Charts:
+1) Chairs and Printers lead revenue while Phones lag, signaling product mix pressure.
+2) Monthly sales are softening over time, indicating weaker demand.
+3) Cancelled and Returned orders exceed 40%, exposing a severe execution risk.
+4) Credit Card drives the highest revenue while Online is the most used method.
+5) A small set of high-value outliers can materially swing reported performance.
